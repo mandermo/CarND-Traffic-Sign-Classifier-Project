@@ -121,7 +121,7 @@ Here are the results of the prediction:
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | 70 Sign         		| 70 Sign   									| 
-| 100 Sign     			| No passing 									|
+| 100 Sign     			| 70 Sign 									|
 | No entry				| No entry										|
 | Stop  	      		| Stop	        				 				|
 | Yield     			| Yield              							|
