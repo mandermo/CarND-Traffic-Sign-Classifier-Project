@@ -84,6 +84,9 @@ My final model consisted of the following layers:
 | Convolution 5x5	    | 1x1 stride, valid padding, outputs 8x8x16 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 4x4x16  				|
+| Flattening	      	| outputs 256                                  |
+| Fully connected		| 256 to 120       								|
+| RELU					|												|
 | Fully connected		| 120 to 84        								|
 | RELU					|												|
 | Fully connected		| 84 to 43        								|
@@ -150,7 +153,7 @@ Even 1e-10 is zero according to my defitionion, it is comforting to know it only
 
 ---
 
-For the first image, the model is erroneously quite sure that this is 70 Sign (probability of 0.86), and the image contains a 100 sign. The top five soft max probabilities were
+For the second image, the model is erroneously quite sure that this is 70 Sign (probability of 0.86), and the image contains a 100 sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -163,7 +166,7 @@ For the first image, the model is erroneously quite sure that this is 70 Sign (p
 It guesses wrong and the second top probability is also wrong, the third is the sign that appeared, but with very very low estimated probability. Fortnately all of the guesses are speed limit signs.
 
 ---
-For the first image, the model is very sure that this is No Entry Sign (probability of 1.0), and the image does contain a No Entry Sign. The top five soft max probabilities were
+For the third image, the model is very sure that this is No Entry Sign (probability of 1.0), and the image does contain a No Entry Sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -176,7 +179,7 @@ For the first image, the model is very sure that this is No Entry Sign (probabil
 
 ---
 
-For the first image, the model is very sure that this is Stop sign (probability of 1.0), and the image does contain a Stop sign. The top five soft max probabilities were
+For the fourth image, the model is very sure that this is Stop sign (probability of 1.0), and the image does contain a Stop sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -188,7 +191,7 @@ For the first image, the model is very sure that this is Stop sign (probability 
 
 
 ---
-For the first image, the model is very sure that this is Yield sign (probability of 1.0), and the image does contain a Yield sign. The top five soft max probabilities were
+For the fifth image, the model is very sure that this is Yield sign (probability of 1.0), and the image does contain a Yield sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
